@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace cadastro_usuario
+class Program
 {
-    // Lista que será utilizada para armazenar todos os usuários que foram digitados na memória
+    // Lista que vai armazenar todos os usuários que foram digitados na memória
 
     static List<Usuario> usuarios = new List<Usuario>();
 
@@ -15,8 +13,7 @@ namespace cadastro_usuario
     {
         while (true)
         {
-            Console.WriteLine("\n-------- CADASTRO DE USUÁRIOS --------");
-            Console.WriteLine("Menu:");
+            Console.WriteLine("\nMenu:");
             Console.WriteLine("1 - Inserir um usuário");
             Console.WriteLine("2 - Buscar usuário pelo seu nome");
             Console.WriteLine("3 - Mostrar a lista de todos os usuários");
@@ -103,7 +100,7 @@ namespace cadastro_usuario
     }
 }
 
-// Classe que vai representar um usuário
+// Classe que representa um usuário
 class Usuario
 {
     public string Nome { get; }
