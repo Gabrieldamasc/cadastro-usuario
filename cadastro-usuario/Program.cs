@@ -13,6 +13,7 @@ class Program
     {
         while (true)
         {
+            Console.WriteLine("---------- CADASTRO DE USUÁRIO ----------");
             Console.WriteLine("\nMenu:");
             Console.WriteLine("1 - Inserir um usuário");
             Console.WriteLine("2 - Buscar usuário pelo seu nome");
@@ -64,7 +65,7 @@ class Program
         Console.WriteLine("Usuário cadastrado com sucesso!");
     }
 
-    // Método para buscar um usuário pelo nome
+    // Método para buscar um usuário pelo seu nome cadastrado
     static void userSearch()
     {
         Console.Write("Digite o nome do usuário para busca: ");
@@ -83,7 +84,7 @@ class Program
         }
     }
 
-    // Método para mostrar a lista de todos os usuários
+    // Método para mostrar a lista de todos os usuários que foram cadastrados no sistema
     static void userList()
     {
         if (usuarios.Count == 0)
@@ -100,7 +101,7 @@ class Program
     }
 }
 
-// Classe que representa um usuário
+// Classe para representar um usuário
 class Usuario
 {
     public string Nome { get; }
